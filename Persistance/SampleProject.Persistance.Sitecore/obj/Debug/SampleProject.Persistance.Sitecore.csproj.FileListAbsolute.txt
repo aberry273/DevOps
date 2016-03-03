@@ -1,0 +1,4 @@
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Persistance.Sitecore\bin\Debug\SampleProject.Persistance.Sitecore.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Persistance.Sitecore\bin\Debug\SampleProject.Persistance.Sitecore.pdb
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Persistance.Sitecore\obj\Debug\SampleProject.Persistance.Sitecore.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Persistance.Sitecore\obj\Debug\SampleProject.Persistance.Sitecore.pdb

@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--<Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7CA5427-6D5A-4091-B497-AD68F939BD53}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SampleProject.Presentation.LaunchSitecore</RootNamespace>
+    <AssemblyName>SampleProject.Presentation.LaunchSitecore</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>-->
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics">
+      <HintPath>..\..\..\src\Sitecore\Sitecore.Analytics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Automation">
+      <HintPath>..\..\..\src\scfull\Sitecore.Analytics.Automation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Core">
+      <HintPath>..\..\..\src\Sitecore\Sitecore.Analytics.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model">
+      <HintPath>..\..\..\src\scfull\Sitecore.Analytics.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Client">
+      <HintPath>..\..\..\src\scfull\Sitecore.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\..\..\src\Sitecore\Sitecore.ContentSearch.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>..\..\..\src\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceEditor.Speak">
+      <HintPath>..\..\..\src\Sitecore\Sitecore.ExperienceEditor.Speak.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\src\Sitecore\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\..\src\Sitecore\Sitecore.Mvc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\AuthoringExperience\ContentEditor\NoVersionInCurrentLanguageGutter.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\AlertDictionary.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\GenerateFieldEditorUrl.cs" />
+    <Compile Include="Configuration\Commands\UpdateItemNamesCommand.cs" />
+    <Compile Include="Configuration\Comparers\ItemIDComparer.cs" />
+    <Compile Include="Configuration\Comparers\ItemSorterByTitle.cs" />
+    <Compile Include="Configuration\Events\ItemSaving\ItemNameHyphenHandler.cs" />
+    <Compile Include="Configuration\Events\ItemSaving\ItemNameUniqueHandler.cs" />
+    <Compile Include="Configuration\Events\mvc.exception\ShowPocErrorMessage.cs" />
+    <Compile Include="Configuration\Helpers\AnalyticsHelper.cs" />
+    <Compile Include="Configuration\Helpers\EditFrameHelper.cs" />
+    <Compile Include="Configuration\Helpers\HtmlRemoval.cs" />
+    <Compile Include="Configuration\Helpers\ItemNamingHelper.cs" />
+    <Compile Include="Configuration\Helpers\UIHelpers.cs" />
+    <Compile Include="Configuration\Installer\LaunchSitecorePostPackageStep.cs" />
+    <Compile Include="Configuration\Pipelines\GetContentEditorWarnings\ContentEditorItemNamingNotification.cs" />
+    <Compile Include="Configuration\Pipelines\StartTracking\GeoIpSpoofForLocalhost.cs" />
+    <Compile Include="Configuration\Processors\saveUI\RemoveNonBreakingSpacesSaveProcessor.cs" />
+    <Compile Include="Configuration\Rules\EnrollInAutomationState.cs" />
+    <Compile Include="Configuration\Search\ComputedFields\HasPresentationComputedField.cs" />
+    <Compile Include="Configuration\Search\ComputedFields\ProfileCardComputedField.cs" />
+    <Compile Include="Configuration\Search\ComputedFields\SiteAreaComputedField.cs" />
+    <Compile Include="Configuration\Search\Models\SitecoreItem.cs" />
+    <Compile Include="Configuration\Security\CreateSecurityAccounts.cs" />
+    <Compile Include="Configuration\SiteConfiguration.cs" />
+    <Compile Include="Configuration\SiteUI\LaunchSitecoreBaseController.cs" />
+    <Compile Include="Configuration\Validators\MustIncludePTags.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FavoritesController.cs" />
+    <Compile Include="Controllers\ListsController.cs" />
+    <Compile Include="Controllers\MetaController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\SingleItemController.cs" />
+    <Compile Include="Controllers\SiteConfigurationController.cs" />
+    <Compile Include="Controllers\VisitController.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\CarouselItem.cs" />
+    <Compile Include="Models\Error.cs" />
+    <Compile Include="Models\GenericLink.cs" />
+    <Compile Include="Models\JumbotronItem.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\MenuItemList.cs" />
+    <Compile Include="Models\PageEditorAlert.cs" />
+    <Compile Include="Models\PromoItem.cs" />
+    <Compile Include="Models\QuotationItem.cs" />
+    <Compile Include="Models\SearchResults.cs" />
+    <Compile Include="Models\SimpleItem.cs" />
+    <Compile Include="Models\SimpleItemList.cs" />
+    <Compile Include="Models\SimpleNavigationItem.cs" />
+    <Compile Include="Models\TextWidgetItem.cs" />
+    <Compile Include="Models\VisitInformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\www.LaunchSitecore.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.GeoIpSpoofForLocalhost.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.ItemNaming.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.LinkManager.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.PageEditor.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.Registration.config" />
+    <Content Include="bin\LaunchSitecore.dll.config" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Favorites\AddToFavorites.cshtml" />
+    <Content Include="Views\Lists\Carousel.cshtml" />
+    <Content Include="Views\Lists\IconAndTitleList.cshtml" />
+    <Content Include="Views\Lists\LinkList.cshtml" />
+    <Content Include="Views\Lists\Tags.cshtml" />
+    <Content Include="Views\Lists\TeamList.cshtml" />
+    <Content Include="Views\Navigation\Breadcrumbs.cshtml" />
+    <Content Include="Views\Navigation\FooterNavigation.cshtml" />
+    <Content Include="Views\Navigation\Header.cshtml" />
+    <Content Include="Views\Navigation\MainNavigation.cshtml" />
+    <Content Include="Views\Navigation\SecondaryNavigation.cshtml" />
+    <Content Include="Views\Navigation\SecondaryNavigationSection.cshtml" />
+    <Content Include="Views\Navigation\TertiaryNavigation.cshtml" />
+    <Content Include="Views\Navigation\TertiaryNavigationPartialFavorites.cshtml" />
+    <Content Include="Views\Navigation\TertiaryNavigationPartialSites.cshtml" />
+    <Content Include="Views\Page Structure\Content\Both Sidebars.cshtml" />
+    <Content Include="Views\Page Structure\Content\Left Sidebar.cshtml" />
+    <Content Include="Views\Page Structure\Content\No Sidebars.cshtml" />
+    <Content Include="Views\Page Structure\Content\Right Sidebar.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Four One.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Three One.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Three Three.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Two Four One.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Two Four.cshtml" />
+    <Content Include="Views\Search\Search.cshtml" />
+    <Content Include="Views\Search\SearchBox.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\ErrorDetails.cshtml" />
+    <Content Include="Views\Shared\Main.cshtml" />
+    <Content Include="Views\Shared\ShowPageEditorAlert.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\SingleItem\AbstractBox.cshtml" />
+    <Content Include="Views\SingleItem\AbstractSpot.cshtml" />
+    <Content Include="Views\SingleItem\ArticleTitleAndBody.cshtml" />
+    <Content Include="Views\SingleItem\ArticleTitleImageAndBody.cshtml" />
+    <Content Include="Views\SingleItem\Biography.cshtml" />
+    <Content Include="Views\SingleItem\FeaturedQuotation.cshtml" />
+    <Content Include="Views\SingleItem\Jumbotron.cshtml" />
+    <Content Include="Views\SingleItem\PromoSpotWithImage.cshtml" />
+    <Content Include="Views\SingleItem\PromoSpotWithNoImage.cshtml" />
+    <Content Include="Views\SingleItem\PromoSpotWithThumbnailImage.cshtml" />
+    <Content Include="Views\SingleItem\TermDetails.cshtml" />
+    <Content Include="Views\SingleItem\TextWidget.cshtml" />
+    <Content Include="Views\SingleItem\TitleAndBody.cshtml" />
+    <Content Include="Views\Visit\VisitDetails.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\color.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\img\baloon.gif" />
+    <Content Include="assets\img\blank.gif" />
+    <Content Include="assets\img\bottom_block_bg.png" />
+    <Content Include="assets\img\breadcrumb_icon.png" />
+    <Content Include="assets\img\collapse_btn.png" />
+    <Content Include="assets\img\collapse_btn_inverse.png" />
+    <Content Include="assets\img\grey_quote.png" />
+    <Content Include="assets\img\left_nav_bullets.png" />
+    <Content Include="assets\img\line.png" />
+    <Content Include="assets\img\line_title_bg.gif" />
+    <Content Include="assets\img\lite-gray-check.png" />
+    <Content Include="assets\img\nope.png" />
+    <Content Include="assets\img\over.png" />
+    <Content Include="assets\img\page.png" />
+    <Content Include="assets\img\quote.png" />
+    <Content Include="assets\img\quotes.png" />
+    <Content Include="assets\img\shadow1.png" />
+    <Content Include="assets\img\sitecore-logo.png" />
+    <Content Include="assets\img\slider_arrows.png" />
+    <Content Include="assets\img\value.png" />
+    <Content Include="assets\img\warning-icons.png" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\jquery-1.11.1.min.js" />
+    <Content Include="assets\js\jquery-1.7.2.min.js" />
+    <Content Include="assets\js\jquery-ui.min.js" />
+    <Content Include="assets\js\scrollReveal.js" />
+    <Content Include="assets\speak\LaunchFieldEditor.js" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\LaunchSitecore.dll" />
+    <Content Include="bin\LaunchSitecore.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="favicon.ico" />
+    <Content Include="license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>44990</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44990/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--<Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

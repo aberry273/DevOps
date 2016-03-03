@@ -1,0 +1,5 @@
+﻿@model SampleProject.Presentation.LaunchSitecore.Models.TextWidgetItem
+<div>
+ <h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
+ @Html.Sitecore().Field("Text", Model.Item)
+</div>

@@ -1,0 +1,5 @@
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Xamarin.IOS\bin\Debug\SampleProject.Xamarin.IOS.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Xamarin.IOS\bin\Debug\SampleProject.Xamarin.IOS.pdb
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Xamarin.IOS\obj\Debug\SampleProject.Xamarin.IOS.csprojResolveAssemblyReference.cache
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Xamarin.IOS\obj\Debug\SampleProject.Xamarin.IOS.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.Xamarin.IOS\obj\Debug\SampleProject.Xamarin.IOS.pdb

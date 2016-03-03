@@ -1,0 +1,6 @@
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Presentation\SampleProject.Presentation.LaunchSitecore\obj\Debug\SampleProject.Presentation.LaunchSitecore.csprojResolveAssemblyReference.cache
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Presentation\SampleProject.Presentation.LaunchSitecore\bin\SampleProject.Presentation.LaunchSitecore.dll.config
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Presentation\SampleProject.Presentation.LaunchSitecore\bin\SampleProject.Presentation.LaunchSitecore.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Presentation\SampleProject.Presentation.LaunchSitecore\bin\SampleProject.Presentation.LaunchSitecore.pdb
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Presentation\SampleProject.Presentation.LaunchSitecore\obj\Debug\SampleProject.Presentation.LaunchSitecore.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Presentation\SampleProject.Presentation.LaunchSitecore\obj\Debug\SampleProject.Presentation.LaunchSitecore.pdb

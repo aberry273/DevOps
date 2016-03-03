@@ -1,0 +1,5 @@
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.EntityManager\bin\Debug\SampleProject.EntityManager.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.EntityManager\bin\Debug\SampleProject.EntityManager.pdb
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.EntityManager\obj\Debug\SampleProject.Framework.EntityManager.csprojResolveAssemblyReference.cache
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.EntityManager\obj\Debug\SampleProject.EntityManager.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\SampleProject.EntityManager\obj\Debug\SampleProject.EntityManager.pdb

@@ -1,0 +1,3 @@
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Tests\SampleProject.Presentation.LaunchSitecore.Tests\obj\Debug\SampleProject.Presentation.LaunchSitecore.Tests.csprojResolveAssemblyReference.cache
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Tests\SampleProject.Presentation.LaunchSitecore.Tests\obj\Debug\SampleProject.Presentation.Web.Tests.dll
+C:\Projects\Sitecore\DevOps\Solution\SampleProject\Tests\SampleProject.Presentation.LaunchSitecore.Tests\obj\Debug\SampleProject.Presentation.Web.Tests.pdb
