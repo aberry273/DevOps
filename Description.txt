@@ -1,0 +1,15 @@
+Solution hierachy:
+
+Application:
+	All application components which are related to the project however do not run under the website application
+Domain:
+	Business level components, these may be entities which are specific to the business layer
+Framework
+	PoC layer and overall project dependencies sit here.
+	Standard project libraries can sit here, I.E EntityFramework would be here
+Infrastructure
+	References to database and overall system infrastructure sit here
+Persistance
+	Persistance layer contain the repositories and will in turn be related to the infrastructure
+Presentation
+	Sitecore/Kentico/CMS and web sites sit here
