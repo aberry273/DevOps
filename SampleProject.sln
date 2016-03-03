@@ -44,11 +44,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProject.Presentation.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProject.Presentation.LaunchSitecore.Tests", "Tests\SampleProject.Presentation.LaunchSitecore.Tests\SampleProject.Presentation.LaunchSitecore.Tests.csproj", "{BFCC1C3A-505B-473F-B037-90A56C2AC857}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SampleProject.LaunchSitecore.Master", "Solution Files\TDS\SampleProject.TDS.LaunchSitecore\SampleProject.LaunchSitecore.Master.scproj", "{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProject.Domain.Finance.Services", "Domain\SampleProject.Domain.Finance.Services\SampleProject.Domain.Finance.Services.csproj", "{13F2DE8B-E813-41F2-908C-E9AF85599A45}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SampleProject.LaunchSitecore.Core", "SampleProject.LaunchSitecore.Core\SampleProject.LaunchSitecore.Core.scproj", "{8CEC40CA-3E25-470F-9567-017F72DCFA54}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SampleProject.TDS.LaunchSitecore.Core", "Solution Files\TDS\SampleProject.TDS.LaunchSitecore.Core\SampleProject.TDS.LaunchSitecore.Core.scproj", "{8CEC40CA-3E25-470F-9567-017F72DCFA54}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SampleProject.TDS.LaunchSitecore.Master", "Solution Files\TDS\SampleProject.TDS.LaunchSitecore.Master\SampleProject.TDS.LaunchSitecore.Master.scproj", "{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,12 +80,6 @@ Global
 		{BFCC1C3A-505B-473F-B037-90A56C2AC857}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFCC1C3A-505B-473F-B037-90A56C2AC857}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFCC1C3A-505B-473F-B037-90A56C2AC857}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{13F2DE8B-E813-41F2-908C-E9AF85599A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13F2DE8B-E813-41F2-908C-E9AF85599A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13F2DE8B-E813-41F2-908C-E9AF85599A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -96,6 +90,12 @@ Global
 		{8CEC40CA-3E25-470F-9567-017F72DCFA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CEC40CA-3E25-470F-9567-017F72DCFA54}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8CEC40CA-3E25-470F-9567-017F72DCFA54}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,8 +117,8 @@ Global
 		{5C818819-A48E-4C33-AE5B-03B333212482} = {589C263C-914D-401A-A26F-7AA3036ABF7A}
 		{A7CA5427-6D5A-4091-B497-AD68F939BD53} = {F26901E2-8B80-432F-A499-CFBF34506861}
 		{BFCC1C3A-505B-473F-B037-90A56C2AC857} = {AD8BB07E-8150-48D6-A69E-0667EFC1F721}
-		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3} = {EDB2BBBD-983E-4270-A16A-5CB70B11664B}
 		{13F2DE8B-E813-41F2-908C-E9AF85599A45} = {CF082DD7-BC5D-4721-A0D0-7F68EA073C3A}
 		{8CEC40CA-3E25-470F-9567-017F72DCFA54} = {EDB2BBBD-983E-4270-A16A-5CB70B11664B}
+		{F9CC5461-F2B7-4CB3-9DE6-2FE66AA365F3} = {EDB2BBBD-983E-4270-A16A-5CB70B11664B}
 	EndGlobalSection
 EndGlobal
